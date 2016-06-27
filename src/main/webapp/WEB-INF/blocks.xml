@@ -51,5 +51,18 @@
 			</list>
 		</property>
 	</bean>
+	<bean id="contentList" class="com.omdeshpande.frontend.content.service.ContentListBlock">
+		<property name="dao">
+			<map>
+				<entry key="attribute" value-ref="attribute" />
+				<entry key="attributeDataType" value-ref="attributeDataType" />
+				<entry key="attributeDisplayType" value-ref="attributeDisplayType" />
+				<entry key="attributeValueInt" value-ref="attributeValueInt" />
+				<entry key="attributeValueVarchar" value-ref="attributeValueVarchar" />
+				<entry key="entity" value-ref="entity" />
+				<entry key="entityMeta" value-ref="entityMeta" />
+			</map>
+		</property>
+	</bean>
     
 </beans>
